@@ -1,0 +1,46 @@
+# Binaries
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.a
+*.out
+
+# Go build and test artifacts
+/build/
+*.test
+*.log
+
+# Vendor directory (if not using Go modules)
+vendor/
+
+# Dependency directories
+/bin/
+/pkg/
+
+# GoLand IDE files
+.idea/
+
+# VS Code settings
+.vscode/
+
+# Environment files
+.env
+
+# Logs and debug output
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+*.crdownload
+
+# Docker-related files
+docker-compose.override.yml
+**/tmp_docker/

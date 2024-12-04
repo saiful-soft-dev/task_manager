@@ -1,0 +1,25 @@
+### Get All Tasks
+GET http://localhost:8080/tasks
+
+### Create a New Task
+POST http://localhost:8080/tasks
+Content-Type: application/json
+
+{
+    "title": "New Task",
+    "description": "Task description",
+    "is_completed": false
+}
+
+### Update a Task
+PUT http://localhost:8080/tasks/2
+Content-Type: application/json
+
+{
+    "title": "Updated Task",
+    "description": "Updated description",
+    "is_completed": true
+}
+
+### Delete a Task
+DELETE http://localhost:8080/tasks/2
