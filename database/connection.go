@@ -18,7 +18,7 @@ func Connect() {
         " user=" + config.GetEnv("DB_USER") +
         " password=" + config.GetEnv("DB_PASSWORD") +
         " dbname=" + config.GetEnv("DB_NAME") +
-        " port=5432 sslmode=disable"
+        " port=5434 sslmode=disable"
 
     var err error
     DB, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
