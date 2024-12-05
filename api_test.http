@@ -23,3 +23,23 @@ Content-Type: application/json
 
 ### Delete a Task
 DELETE http://localhost:8080/tasks/2
+
+
+### Create a New User
+POST http://localhost:8080/auth/register
+Content-Type: application/json
+
+{
+    "username": "saiful",
+    "email": "saiful@example.com",
+    "password": "securepassword"
+}
+
+### Login request
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+    "email": "saiful@example.com",
+    "password": "securepassword"
+}
